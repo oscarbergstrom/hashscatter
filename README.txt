@@ -1,3 +1,5 @@
+Information is not up to date and the project is not online. /2018-05-14
+
 The website is currently active on: http://hal2000.skip.chalmers.se/
 
 Setup Guide:
