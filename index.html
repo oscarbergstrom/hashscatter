@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href="Style/Main.css">
+	<link rel = "icon" type= "image/png" href="l-400.png" width="283" height="400" alt="L 400"/>
+	<title> Lindell & Co. </title>
+</head>
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div class= "titlebar">
+		hashscatter
+	</div>
+	<br></br>
+	<div class = "instructions">
+	<p> Enter desired hashtags to create comparison chart. </p>
+	</div>
+	<form class = "searchbuttons">
+	<div class="inputlabel">
+		<span class="label"> # </span>
+		<input type="text" id="x-input" placeholder="#..." onkeypress="validateTags()"> 
+	</div>
+	<div class="inputlabel">
+		<span class="label"> # </span>
+		<input type="text" id="y-input" placeholder = "#..." onkeypress="validateTags()">
+	</div>
+	<span id="notice"></span>
+	</form>
+	<button class = "createbutton" type = "button" onclick="drawgraph()" disabled="disabled"> Create Chart </button>		
+	<canvas id="chart-box" width="600" height="400" >		
+	</canvas>
+	
+	<div class="windows8">
+	<div class="wBall" id="wBall_1">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_2">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_3">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_4">
+		<div class="wInnerBall"></div>
+	</div>
+	<div class="wBall" id="wBall_5">
+		<div class="wInnerBall"></div>
+	</div>
+	
+	<div id="notice"></div>
+	
+	<script src="Scripts/graph.js"></script>
+</body>
